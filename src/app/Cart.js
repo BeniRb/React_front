@@ -70,7 +70,7 @@ const Cart = () => {
       
         <div>
         <Button variant='outlined' onClick={() =>{;notify();dispatch(addOrderAsync({ myCart, token }));dispatch(deleteCart());
-        setTimeout(function() {window.location.replace('/home');}, 2000)}}>Make order</Button>
+        setTimeout(function() {window.location.replace('https://react-front.onrender.com/');}, 2000)}}>Make order</Button>
         </div>
         <ToastContainer  position="bottom-center" autoClose={1000} />
         {/* <button onClick={() => console.table(myOrders)}>show MyOrders</button></div>} */}
