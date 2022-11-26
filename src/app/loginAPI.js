@@ -1,7 +1,7 @@
 import axios from 'axios'
-const URL = "http://127.0.0.1:8000/api/token/"
-const URL_REGISTER = "http://127.0.0.1:8000/api/register/"
-const URL_LOGOUT = "http://127.0.0.1:8000/api/logout"
+const URL = "https://django-back-fubq.onrender.com/api/token/"
+const URL_REGISTER = "https://django-back-fubq.onrender.com/api/register/"
+const URL_LOGOUT = "https://django-back-fubq.onrender.com/api/logout"
 
 export function signin(cred) {
 

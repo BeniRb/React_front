@@ -4,7 +4,7 @@ import React from 'react'
 const Welcome = () => {
   const myStyle={
     backgroundImage: 
-"url('http://127.0.0.1:8000/media/Posted_images/websitebg.png')",
+"url('https://django-back-fubq.onrender.com/media/Posted_images/websitebg.png')",
 };
   return (
     <div style={myStyle}>
@@ -15,9 +15,9 @@ const Welcome = () => {
       <h4 align="center">this project was created using Django as a backend<br></br> and the front was created by React&Redux.js<br></br>
       enjoy your visit! </h4><br></br><br></br>
       <h4 align="center" style={{margin:"150px"}}>Find us on:<br></br>
-      <a href="https://www.linkedin.com/in/beni-ribakov-942239233/"><img src="http://127.0.0.1:8000/media/Posted_images/linkedin.png" height="25px"></img></a>{"    "}
-      <a href="https://github.com/BeniRb"><img src="http://127.0.0.1:8000/media/Posted_images/github-logo.png" height="25px"></img></a>{"    "}
-      <a href="mailto:beni.ribakov@gmail.com"><img src="http://127.0.0.1:8000/media/Posted_images/gmail.png" height="25px"></img></a>{"    "}
+      <a href="https://www.linkedin.com/in/beni-ribakov-942239233/"><img src="https://django-back-fubq.onrender.com/media/Posted_images/linkedin.png" height="25px"></img></a>{"    "}
+      <a href="https://github.com/BeniRb"><img src="https://django-back-fubq.onrender.com/media/Posted_images/github-logo.png" height="25px"></img></a>{"    "}
+      <a href="mailto:beni.ribakov@gmail.com"><img src="https://django-back-fubq.onrender.com/media/Posted_images/gmail.png" height="25px"></img></a>{"    "}
       {/* <a href="asdasdasd"><img src="http://127.0.0.1:8000/media/Posted_images/facebook.png" height="25px"></img></a>{"    "} */}
       </h4>
       <h5 align="center">
