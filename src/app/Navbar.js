@@ -52,7 +52,7 @@ const Navbar = () => {
             {loggedIn && userName &&<Link to="/cart"> <i className="fas fa-wallet"></i>Cart</Link>}&nbsp; &nbsp;
           </li>
           {isAdmin && <div><li class="nav-item">
-            <a href="http://127.0.0.1:8000/admin/"> <i className="fas fa-user"></i>Admin page</a>&nbsp; &nbsp;
+            <a href="https://django-back-fubq.onrender.com/admin/"> <i className="fas fa-user"></i>Admin page</a>&nbsp; &nbsp;
           </li></div>}
         </ul>
       </div>
