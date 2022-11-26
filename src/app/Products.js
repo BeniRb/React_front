@@ -40,7 +40,7 @@ const Products = () => {
 
        {loggedIn && products.map( prod=> <div>{" "}
        <Card style={{ width:'20rem'}}>
-      <Card.Img  width="350px" height="320px" variant="top" src={`http://127.0.0.1:8000/media/${prod.image}`} />
+      <Card.Img  width="350px" height="320px" variant="top" src={`https://django-back-fubq.onrender.com/media/${prod.image}`} />
         <Card.Body>
           <Card.Title>{prod.desc} </Card.Title>
           <Card.Text >
