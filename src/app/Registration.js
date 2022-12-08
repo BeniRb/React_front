@@ -29,7 +29,8 @@ const Registration = () => {
             Password <br></br> <input  placeholder="Enter Password"onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Confirm password <br></br> <input placeholder="Confirm Password" onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Email <br></br> <input placeholder="Enter Email" onChange={(e) => setconfPWD(e.target.value)} /><br></br>
-            <button onClick={() =>{setTimeout(function() {window.location.replace('https://react-front.onrender.com/login');}, 2000);dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}}>Register</button>
+            <button onClick={() =>{setTimeout(function() {window.location.replace('https://react-front.onrender.com/');}, 2000)
+            ;dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}}>Register</button>
             </form>
         </div>
   )
