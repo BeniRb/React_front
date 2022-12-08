@@ -27,7 +27,7 @@ const Registration = () => {
             Confirm password <br></br> <input placeholder="Confirm Password" onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Email <br></br> <input placeholder="Enter Email" onChange={(e) => setconfPWD(e.target.value)} /><br></br>
             {!token && <button onClick={() =>dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}>Register</button>}
-            <ToastContainer  position="bottom-center" autoClose={2000} />
+            <ToastContainer  position="bottom-center"/>
             </form>
         </div>
   )
