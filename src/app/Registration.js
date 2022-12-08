@@ -15,7 +15,7 @@ const Registration = () => {
     const [newPwd, setNewPwd] = useState("")
     const [confPWD, setconfPWD] = useState("")
     const [newEmail, setNewEmail] = useState("")
-    if(doSignupAsync){
+    if(dispatch(doSignupAsync)){
       navigate('https://react-front.onrender.com/login')
   }
 
