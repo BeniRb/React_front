@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch,Link,useNavigate } from 'react-redux';
 import { doSigninAsync, selectEmail,selectUserName,selectToken, doSignupAsync } from './loginSlice'
 import { ToastContainer, toast } from 'react-toastify';
 
 const Registration = () => {
+  const navigate = useNavigate();
   const notify = () => toast.success("Registration completed");
     const dispatch = useDispatch();
     const email = useSelector(selectEmail);
@@ -13,6 +14,10 @@ const Registration = () => {
     const [newPwd, setNewPwd] = useState("")
     const [confPWD, setconfPWD] = useState("")
     const [newEmail, setNewEmail] = useState("")
+    if(doSignupAsync){
+      navigate('https://react-front.onrender.com/login')
+  }
+
     
 
 
@@ -27,7 +32,6 @@ const Registration = () => {
             Confirm password <br></br> <input placeholder="Confirm Password" onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Email <br></br> <input placeholder="Enter Email" onChange={(e) => setconfPWD(e.target.value)} /><br></br>
             {<button onClick={() =>dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}>Register</button>}
-            <ToastContainer  position="bottom-center"/>
             </form>
         </div>
   )
