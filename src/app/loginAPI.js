@@ -1,6 +1,6 @@
 import axios from 'axios'
 const URL = "https://django-back-fubq.onrender.com/api/token/"
-const URL_REGISTER = "https://django-back-fubq.onrender.com/api/register/"
+const URL_REGISTER = "https://django-back-fubq.onrender.com/api/register"
 const URL_LOGOUT = "https://django-back-fubq.onrender.com/api/logout"
 
 export function signin(cred) {
