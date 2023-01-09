@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link,useNavigate } from "react-router-dom";
 import { doSigninAsync, selectEmail,selectUserName,selectToken, doSignupAsync } from './loginSlice'
 import { ToastContainer, toast } from 'react-toastify';
+import Button from '@mui/material/Button';
 
 const Registration = () => {
   const notify = () => toast.success("Registration completed");
@@ -29,7 +30,8 @@ const Registration = () => {
             Password <br></br> <input  placeholder="Enter Password"onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Confirm password <br></br> <input placeholder="Confirm Password" onChange={(e) => setNewPwd(e.target.value)} type='password' /><br></br>
             Email <br></br> <input placeholder="Enter Email" onChange={(e) => setconfPWD(e.target.value)} /><br></br>
-            <button onClick={() =>{dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}}>Register</button>
+            <Button variant= "contained" color="success" onClick={() => {notify();dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }))}}>Register</Button>
+             {/* onClick={() => {notify();dispatch(doSignupAsync({ username: newUserName, password: newPwd, email: newEmail }),doSigninAsync({ username: newUserName, password: newPwd }))}}>Register</Button>} */}
             </form>
         </div>
   )
